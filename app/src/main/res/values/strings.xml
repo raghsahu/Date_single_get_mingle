@@ -1,0 +1,182 @@
+<resources>
+    <!--<string name="app_name">Date single get mingle</string>-->
+
+    <string name="app_name">DateSinglegetMingle</string>
+    <string name="FACEBOOK_APP_ID">1757932527674554</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">940b3c5eb54339a76b52284e6804a947</string>
+
+
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_add_credits">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="hi_could_me_reminds_me_of_the_problems">Hi , could me reminds me of the problems?</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="no_internal_connection">No Internet Connection</string>
+    <string name="donothaveinternet">You don\'t have internet connection.</string>
+    <string name="server_problem">Server Problem Please try Next time...!</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="can_not_be_empty">Can\'t be empty</string>
+    <string name="passmismatch">Password Mismatch</string>
+    <string name="invalidemail">Invalid Email</string>
+    <string name="pleaseselctgender">Please select gender</string>
+    <string name="new_online">Online Now</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="select_city">Select City</string>
+
+    <string name="profile_paired_msg">Yah! You\'re now paired. Let\'s go to know each other</string>
+    // Cropper
+    <!--Picker text-->
+    <string name="crop_image_activity_title">Crop Image</string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="please_enter_your_registered_email_address_below_to_reset_your_password">Please enter your registered email address below to reset your password.</string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="permission_denied">YOU DENIED PERMISSION CANNOT SELECT IMAGE</string>
+    <string name="your_permission_denied">YOUR PERMISSION DENIED</string>
+    <string name="result_image_desc">crop result</string>
+    <string name="pick_image_intent_text">Choose an image</string>
+
+    <string-array name="from_age">
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="education_array">
+
+        <item>High school</item>
+        <item>Trade school</item>
+        <item>Diploma</item>
+        <item>Bachelors</item>
+        <item>Masters</item>
+        <item>Doctorate</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="profession_array">
+
+        <item>Software Professional</item>
+        <item>Business Person</item>
+        <item>Student</item>
+        <item>Technical / Engineering / Science</item>
+        <item>Sales / Marketing</item>
+        <item>Hospitality / Service</item>
+        <item>Executive / Management</item>
+        <item>Accounts / Finance</item>
+        <item>Acting / Artist / Musician</item>
+        <item>Architect</item>
+        <item>Journalism</item>
+        <item>Fashion</item>
+        <item>Law</item>
+        <item>Teaching</item>
+        <item>Agriculture</item>
+        <item>Civil Services (IAS,IPS.IRS,IFS)</item>
+        <item>Defence</item>
+        <item>Socail service</item>
+        <item>Medical</item>
+        <item>Writer</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="drink_array">
+
+        <item>Non-drinker</item>
+        <item>Drink socially only</item>
+        <item>Often</item>
+
+    </string-array>
+
+    <string-array name="smoke_array">
+
+        <item>Non-smoker</item>
+        <item>Smoke occasionally</item>
+        <item>Regular</item>
+        <item>Tryin to quit</item>
+
+    </string-array>
+
+    <string-array name="eating_array">
+
+        <item>Vegetarian</item>
+        <item>Non-vegetarian</item>
+        <item>Eggetarian</item>
+
+    </string-array>
+
+</resources>

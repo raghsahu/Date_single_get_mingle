@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gredient"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Activity.Signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sing"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="@color/colorAccent"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/AppTheme">
+
+                    <EditText
+                        android:id="@+id/edittxt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorWhite"
+                        android:hint="Enter Username"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/AppTheme">
+
+                    <EditText
+                        android:id="@+id/edittxt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorWhite"
+                        android:hint="Enter Email"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/AppTheme">
+
+                    <EditText
+                        android:id="@+id/edittxt_phonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorWhite"
+                        android:hint="Mobile Number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/edittxt_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorWhite"
+                            android:hint="Age"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/colorWhite" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/hide_age_txt"
+                        style="@style/TextAppearance.AppCompat.Small"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Show"
+                        android:textColor="@color/colorAccent" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="Select City Name"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorWhite" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textlayout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:passwordToggleEnabled="true">
+
+
+                    <EditText
+                        android:id="@+id/edittxt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorWhite"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/textlayout_confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/AppTheme"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/edittxt_confirmpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorWhite"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Gender"
+                        android:textColor="@color/colorWhite" />
+
+                    <RadioGroup
+                        android:id="@+id/radioSex"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorWhite"
+                            android:text="Male"
+                            android:textColor="@color/colorAccent" />
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:buttonTint="@color/colorWhite"
+                            android:text="Female"
+                            android:textColor="@color/colorAccent" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_gredient"
+                android:text="Sign UP"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorWhite" />
+
+            <LinearLayout
+                android:id="@+id/go_to_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Already Have An Account ?"
+                    android:textColor="@color/colorWhite" />
+
+
+                <TextView
+                    android:id="@+id/textview_login"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LogIn"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

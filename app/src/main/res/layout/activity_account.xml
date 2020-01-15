@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Activity.Account">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/my_account_back_lay"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_back_arrow" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="My Account"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/account_user_profile_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/download"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp">
+
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/slider_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/colorWhite"
+                            android:visibility="visible" />
+
+
+                        <!--<View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/_6sdp"
+                            android:background="@color/light_gray"
+                            android:visibility="visible" />-->
+
+                        <LinearLayout
+                            android:id="@+id/details_linear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="1.5dp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/add_profile_pic_btn"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_gredient"
+                android:text="Add profile pictures"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textStyle="normal" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_gredient">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="Account Information"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Username" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <TextView
+                    android:id="@+id/profile_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Username"
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="7pt">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Email" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Test@gmail.com"
+                    android:singleLine="true"
+                    android:textSize="7pt">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Password" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <TextView
+                    android:id="@+id/profile_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="123456"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="7pt">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_gredient">
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="Personal Information"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="City Name" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="City name"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="7pt" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Education" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <Spinner
+                    android:id="@+id/eduction_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/education_array">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Profession" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <Spinner
+                    android:id="@+id/profession_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/profession_array">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Drinking Habit" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <Spinner
+                    android:id="@+id/drinking_habit_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/drink_array">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Smoking" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <Spinner
+                    android:id="@+id/smoking_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/smoke_array">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Eating Habit" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <Spinner
+                    android:id="@+id/eating_habit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/eating_array">
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Common Interest" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <TextView
+                    android:id="@+id/common_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Common interest(Touch here to select your interest)"
+                    android:inputType="textMultiLine"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="7pt" />
+
+            </RelativeLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="About my self" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/input2">
+
+                <EditText
+                    android:id="@+id/profile_about_self_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="Type here..."
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:maxLength="2000"
+                    android:paddingTop="10dp"
+                    android:textColorHint="@color/colorBlack" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/update_profile_btn"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_gredient"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:text="Delete Account"
+                android:textColor="@color/colorgry"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

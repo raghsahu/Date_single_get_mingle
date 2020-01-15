@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dating.datesinglegetmingle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.dating.datesinglegetmingle.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.dating.datesinglegetmingle.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.dating.datesinglegetmingle.Bean.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+
+
+        <activity android:name="com.dating.datesinglegetmingle.Activity.ActivityBlockUser" />
+
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.ActivityFullImage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.ActivitySelectCity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.ActivityLikeYou"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.SkippedProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.ChangePassword"
+            android:screenOrientation="portrait" />
+
+
+        <!-- Firebase Notifications -->
+        <!--<service
+            android:name="com.dating.datesinglegetmingle.service.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>-->
+       <!-- <service android:name="com.dating.datesinglegetmingle.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>-->
+
+        <!-- <service
+             android:name=".MyInstanceIDListenerService"
+             android:exported="false">
+             <intent-filter>
+                 <action android:name="com.google.android.gms.iid.InstanceID" />
+             </intent-filter>
+         </service>
+
+         <service
+             android:name=".MyFcmListenerService">
+             <intent-filter>
+                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
+             </intent-filter>
+         </service>-->
+        <!-- ./Firebase Notifications -->
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.dating.datesinglegetmingle.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+        <provider
+            android:name="com.dating.datesinglegetmingle.cropper.ImagePickerPack.MyFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="InnerclassSeparator">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                android:screenOrientation="portrait" />
+        </provider>
+
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.AddProfilePictures"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.NewAndOnlineUsers"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.UserDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Support"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.FAQ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.TermsAndCondition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.ActivityVisitProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.CommonInterest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Home"
+            android:hardwareAccelerated="true"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dating.datesinglegetmingle.Activity.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dating.datesinglegetmingle.Activity.ChatActivity1" />
+        <activity android:name="com.dating.datesinglegetmingle.Activity.MessageConversation" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="c56c08dfcc41d9794f83d000f8342085cd496a4f" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+
+    </application>
+
+</manifest>

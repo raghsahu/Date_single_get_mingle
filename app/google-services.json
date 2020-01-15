@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "310900873369",
+    "firebase_url": "https://date-single-get-mingle.firebaseio.com",
+    "project_id": "date-single-get-mingle",
+    "storage_bucket": "date-single-get-mingle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310900873369:android:078a29c6a4a59cc1",
+        "android_client_info": {
+          "package_name": "com.dating.datesinglegetmingle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310900873369-grma986ju1jhqasoh881k23m3hqm1equ.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dating.datesinglegetmingle",
+            "certificate_hash": "99e3472d36febd533ef32388789302e3b28c36e7"
+          }
+        },
+        {
+          "client_id": "310900873369-63b1p2veatphtcl71ihfcti3h6cpqfis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dating.datesinglegetmingle",
+            "certificate_hash": "4ef1bb602247953ea8de9ecb154d620fe5b7d134"
+          }
+        },
+        {
+          "client_id": "310900873369-fbsgp7m003bc6qu3ulcqti9c2eli9uk8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1enVuyQ8HbaNce1WO8mXES1mjA0X6ifs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310900873369-fbsgp7m003bc6qu3ulcqti9c2eli9uk8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

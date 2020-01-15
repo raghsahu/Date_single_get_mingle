@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_gredient"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mobile Number"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:lines="1"
+                android:id="@+id/forgot_edittxt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Your Email"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_send"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gredient"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            style="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+
+</RelativeLayout>
